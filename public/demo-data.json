@@ -1,0 +1,60 @@
+{
+  "transactions": [
+    {
+      "id": "demo-1",
+      "amount": 2500,
+      "description": "Salaire mensuel",
+      "category": "1",
+      "type": "income",
+      "date": "2024-12-01"
+    },
+    {
+      "id": "demo-2",
+      "amount": 150.50,
+      "description": "Courses Carrefour",
+      "category": "3",
+      "type": "expense",
+      "date": "2024-12-15"
+    },
+    {
+      "id": "demo-3",
+      "amount": 80,
+      "description": "Plein d'essence",
+      "category": "4",
+      "type": "expense",
+      "date": "2024-12-14"
+    },
+    {
+      "id": "demo-4",
+      "amount": 800,
+      "description": "Loyer",
+      "category": "5",
+      "type": "expense",
+      "date": "2024-12-01"
+    },
+    {
+      "id": "demo-5",
+      "amount": 45,
+      "description": "Cinéma",
+      "category": "6",
+      "type": "expense",
+      "date": "2024-12-10"
+    }
+  ],
+  "budgets": [
+    {
+      "id": "budget-1",
+      "categoryId": "3",
+      "amount": 300,
+      "period": "monthly",
+      "alertThreshold": 80
+    },
+    {
+      "id": "budget-2",
+      "categoryId": "4",
+      "amount": 200,
+      "period": "monthly",
+      "alertThreshold": 90
+    }
+  ]
+}
