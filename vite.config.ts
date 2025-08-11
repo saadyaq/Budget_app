@@ -4,7 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Budget_app/',
+  base: process.env.VERCEL ? '/' : '/Budget_app/',
   plugins: [
     react(),
     VitePWA({
