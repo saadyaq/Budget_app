@@ -16,7 +16,7 @@ export const Layout: React.FC<LayoutProps> = ({
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   return (
-    <div className="h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
+    <div className="h-screen flex flex-col bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
       <Header onMenuToggle={() => setIsMobileMenuOpen(true)} />
       
       <div className="flex flex-1 overflow-hidden">

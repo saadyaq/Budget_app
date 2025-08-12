@@ -55,12 +55,12 @@ export const DashboardView: React.FC = () => {
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 mb-6">
+        <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-2">
           Dashboard
         </h1>
         <p className="text-gray-600 dark:text-gray-400">
-          Vue d'ensemble de vos finances
+          Vue d'ensemble de vos finances en temps réel
         </p>
       </div>
 
@@ -94,7 +94,7 @@ export const DashboardView: React.FC = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Graphique des dépenses */}
-        <Card>
+        <Card className="shadow-lg">
           <SimpleChart
             data={expensesByCategory}
             type="pie"
@@ -103,7 +103,7 @@ export const DashboardView: React.FC = () => {
         </Card>
 
         {/* Transactions récentes */}
-        <Card>
+        <Card className="shadow-lg">
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
               Transactions récentes
@@ -151,7 +151,7 @@ export const DashboardView: React.FC = () => {
 
       {/* Graphique en barres des top dépenses */}
       {expensesByCategory.length > 0 && (
-        <Card>
+        <Card className="shadow-lg">
           <SimpleChart
             data={expensesByCategory}
             type="bar"
@@ -161,7 +161,7 @@ export const DashboardView: React.FC = () => {
       )}
 
       {transactions.length === 0 && (
-        <Card>
+        <Card className="shadow-lg">
           <div className="text-center py-12">
             <div className="text-gray-400 dark:text-gray-600 mb-4">
               <svg className="mx-auto h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">

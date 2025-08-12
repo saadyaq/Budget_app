@@ -23,54 +23,48 @@ export const MetricCard: React.FC<MetricCardProps> = ({
 }) => {
   const colorClasses = {
     green: {
-      bg: 'bg-green-50 dark:bg-green-900/20',
-      icon: 'text-green-600 dark:text-green-400',
-      border: 'border-green-200 dark:border-green-800',
+      bg: 'bg-gradient-to-br from-green-500 to-green-600',
+      text: 'text-white',
+      iconBg: 'bg-white/20',
     },
     red: {
-      bg: 'bg-red-50 dark:bg-red-900/20',
-      icon: 'text-red-600 dark:text-red-400',
-      border: 'border-red-200 dark:border-red-800',
+      bg: 'bg-gradient-to-br from-red-500 to-red-600',
+      text: 'text-white',
+      iconBg: 'bg-white/20',
     },
     blue: {
-      bg: 'bg-blue-50 dark:bg-blue-900/20',
-      icon: 'text-blue-600 dark:text-blue-400',
-      border: 'border-blue-200 dark:border-blue-800',
+      bg: 'bg-gradient-to-br from-blue-500 to-blue-600',
+      text: 'text-white',
+      iconBg: 'bg-white/20',
     },
     yellow: {
-      bg: 'bg-yellow-50 dark:bg-yellow-900/20',
-      icon: 'text-yellow-600 dark:text-yellow-400',
-      border: 'border-yellow-200 dark:border-yellow-800',
+      bg: 'bg-gradient-to-br from-orange-500 to-orange-600',
+      text: 'text-white',
+      iconBg: 'bg-white/20',
     },
   };
 
   const selectedColor = colorClasses[color];
 
   return (
-    <Card className={`${selectedColor.bg} ${selectedColor.border} border`}>
-      <div className="flex items-center justify-between">
-        <div>
-          <p className="text-sm font-medium text-gray-600 dark:text-gray-400">
+    <div className={`${selectedColor.bg} rounded-2xl p-6 ${selectedColor.text} shadow-lg`}>
+      <div className="flex items-center justify-between mb-4">
+        <Icon className="w-8 h-8" />
+        <div className="text-right">
+          <p className="text-sm opacity-80">
             {title}
           </p>
-          <p className="text-2xl font-bold text-gray-900 dark:text-gray-100 mt-1">
+          <p className="text-2xl font-bold">
             {formatCurrency(value)}
           </p>
-          {change && (
-            <p className={`text-sm mt-1 ${
-              change.isPositive 
-                ? 'text-green-600 dark:text-green-400' 
-                : 'text-red-600 dark:text-red-400'
-            }`}>
-              {change.isPositive ? '+' : ''}
-              {formatCurrency(change.value)} ce mois
-            </p>
-          )}
-        </div>
-        <div className={`p-3 rounded-full ${selectedColor.bg}`}>
-          <Icon className={`w-6 h-6 ${selectedColor.icon}`} />
         </div>
       </div>
-    </Card>
+      {change && (
+        <p className="text-sm opacity-80">
+          {change.isPositive ? '+' : ''}
+          {formatCurrency(change.value)} ce mois
+        </p>
+      )}
+    </div>
   );
 };

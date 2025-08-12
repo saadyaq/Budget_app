@@ -23,22 +23,23 @@ export const BudgetsView: React.FC = () => {
 
   return (
     <div className="space-y-6">
-      <div className="flex items-center justify-between">
-        <div>
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
-            Budgets
-          </h1>
-          <p className="text-gray-600 dark:text-gray-400">
-            Définissez et suivez vos budgets par catégorie
-          </p>
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 mb-6">
+        <div className="flex items-center justify-between">
+          <div>
+            <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-2">
+              Budgets
+            </h1>
+            <p className="text-gray-600 dark:text-gray-400">
+              Définissez et suivez vos budgets par catégorie
+            </p>
+          </div>
+          <Button 
+            icon={Plus}
+            onClick={() => setIsFormOpen(true)}
+          >
+            Nouveau budget
+          </Button>
         </div>
-        
-        <Button 
-          icon={Plus}
-          onClick={() => setIsFormOpen(true)}
-        >
-          Nouveau budget
-        </Button>
       </div>
 
       {budgets.length === 0 ? (
