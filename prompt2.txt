@@ -1,0 +1,142 @@
+Crée une application de gestion de budget révolutionnaire inspirée des leaders comme Revolut, Monobank et YNAB, avec un design qui fait "WOW" dès la première seconde.
+
+## 🎨 Design Philosophy - "Finance meets Art"
+Objectif : créer une expérience visuelle si séduisante que les utilisateurs VEULENT ouvrir l'app quotidiennement.
+
+## 🌈 Palette de couleurs psycho-optimisée
+- **Couleur signature** : Gradient aurora inspiré des aurores boréales (violet → cyan → orange)
+- **Système sémantique** : 
+  * Bleu cobalt (#3f50b5) pour confiance/stabilité
+  * Orange corail (#FF6B47) pour actions/urgence
+  * Vert émeraude (#00D4AA) pour succès/croissance
+  * Rouge cardinal (#E74C3C) pour alertes/dépassements
+- **Mode sombre intelligent** : détection automatique + économie batterie 60%
+- **Mocha Mousse** (Pantone 2025) pour épargne long-terme
+
+## ✨ Aesthetic révolutionnaire
+**Glassmorphism 2.0** :
+```css
+backdrop-filter: blur(40px) saturate(180%);
+background: rgba(255, 255, 255, 0.25);
+border: 1px solid rgba(255, 255, 255, 0.18);
+box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+Gradients animés réactifs :
+
+Arrière-plans qui évoluent selon l'état financier
+Gradients granuleux avec texture organique
+Animations de gradient basées sur interactions utilisateur
+
+Neumorphism subtil pour boutons critiques avec contraste WCAG 3:1
+🎭 Micro-animations spectaculaires
+Inspire-toi de Revolut's 3D cards :
+
+Physics-based animations : cartes qui flottent/tournent avec inertie réaliste
+Celebrations épiques : confetti + particle systems pour objectifs atteints
+Loading states créatifs : tirelires qui se remplissent, pièces qui tombent
+Hover effects magiques : éléments qui "respirent" et réagissent au curseur
+Transitions cinématographiques : morphing entre vues avec easing cubic-bezier
+
+🎮 Gamification addictive (style Monobank)
+Système de streaks visuellement impressionnant :
+
+Compteur de jours avec animation de flamme qui grandit
+"Frost Points" (3 max) pour les jours manqués
+Badges 3D collectibles avec unlock animations
+Progress rings SVG animés pour objectifs
+Tombola hebdomadaire avec wheel spinner 3D
+
+Mascotte IA :
+
+Personnage 3D qui évolue selon les finances
+Expressions faciales réactives aux actions
+Conseils personnalisés avec speech bubbles animées
+
+🏗️ Layout révolutionnaire
+Dashboard modulaire drag-and-drop :
+
+Cards flottantes repositionnables
+Widgets personnalisables par priorité
+Espacement généreux (50% white space)
+Grid system avec magnetic snapping
+
+Navigation bottom tabs innovante :
+
+4 onglets avec micro-animations uniques
+Indicateurs colorés + badges de notification
+Haptic feedback synchronisé
+Zone d'interaction optimisée pouce (30% écran)
+
+📊 Data Visualization cinématographique
+Charts interactifs next-level :
+
+Progress rings circulaires avec particules
+Heat maps géographiques des dépenses
+3D data mountains (WebGL/Three.js)
+Graphiques qui "respirent" avec les données
+Drill-down animations avec context preservation
+
+Storytelling visuel :
+
+Timeline de transactions style Instagram Stories
+Categorization par code couleur émotionnel
+Insights automatiques avec data poetry
+
+🚀 Features d'engagement révolutionnaires
+Smart Notifications :
+
+Celebrations push pour accomplissements
+Alertes budget avec émojis contextuels
+Encouragements IA personnalisés
+
+Onboarding gamifié :
+
+Mission-based progression non-linéaire
+Récompenses immédiates (premium features unlock)
+Tutoriel interactif style jeu vidéo
+
+Social features subtiles :
+
+Défis entre amis (optionnel)
+Achievements partageable
+Leaderboards anonymisés
+
+💫 Interactions magiques
+Formulaires adaptatifs :
+
+Claviers contextuels intelligents
+Auto-completion prédictive
+Validation temps réel avec feedback visuel
+
+Gestures naturels :
+
+Swipe pour catégoriser
+Pinch pour drill-down temporel
+Long-press pour actions rapides
+Pull-to-refresh avec animation custom
+
+🎯 Architecture technique
+
+React 18 + TypeScript strict
+Framer Motion pour animations premium
+Recharts + D3.js pour visualisations
+Zustand pour state management
+Styled-components avec theme provider
+React Spring pour physics animations
+
+💎 Différenciateurs "WOW"
+
+Budget predictor IA : visualisation future des finances
+Mood-based theming : couleurs qui s'adaptent à la santé financière
+Achievement gallery : musée personnel des accomplissements
+Smart categories : auto-learning des habitudes de dépense
+Financial wellness score : métrique gamifiée de santé financière
+
+🎪 Easter eggs créatifs
+
+Konami code qui débloque thème rétro 8-bit
+Double-tap logo pour mode disco avec animations psychédéliques
+Shake device pour random financial tip
+Long-press balance pour "money rain" animation
+
+L'objectif : créer l'application de budget la plus visuellement addictive jamais conçue, où chaque interaction est un plaisir et où gérer ses finances devient aussi engageant qu'un jeu mobile premium. Think "Instagram meets Revolut meets Pokémon GO".
+Commence par le dashboard principal avec le système de cards glassmorphism et les gradients animés. Chaque composant doit avoir sa propre personnalité visuelle tout en maintenant une cohérence globale.
