@@ -15,7 +15,9 @@ import { RevolutionaryDashboard } from './components/revolutionary/Revolutionary
 import { GamificationSystem } from './components/revolutionary/GamificationSystem';
 import { revolutionaryTheme } from './styles/theme';
 
-// Global styles avec animations
+// 🚀 REVOLUTIONARY BUDGET APP - GLASSMORPHISM 2.0 + AURORA GRADIENTS
+// Build timestamp: 2025-08-12-${Date.now()}
+// Features: Physics animations, Gamification, 3D badges, Particle systems
 const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -220,6 +222,7 @@ interface Achievement {
 }
 
 export const RevolutionaryApp: React.FC = () => {
+  // 🌟 STATE MANAGEMENT FOR REVOLUTIONARY FEATURES
   const [activeTab, setActiveTab] = useState('home');
   const [soundEnabled, setSoundEnabled] = useState(true);
   const [discoMode, setDiscoMode] = useState(false);
