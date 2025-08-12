@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@anthropic-ai/claude-code": "^1.0.73",
     "@types/node": "^24.2.1",
     "@types/uuid": "^10.0.0",
     "autoprefixer": "^10.4.21",
