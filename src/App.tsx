@@ -1,10 +1,9 @@
 import React from 'react';
-import { MobileLayout } from './components/layout/MobileLayout';
-import { MobileDashboard } from './features/dashboard/MobileDashboard';
+import { Layout } from './components/layout/Layout';
+import { DashboardView } from './features/dashboard/DashboardView';
 import { TransactionsView } from './features/transactions/TransactionsView';
 import { BudgetsView } from './features/budgets/BudgetsView';
 import { TransactionForm } from './features/transactions/TransactionForm';
-import { FloatingActionButton } from './components/ui/FloatingActionButton';
 import { Card } from './components/ui/Card';
 
 function App() {
@@ -31,7 +30,7 @@ function App() {
   const renderView = () => {
     switch (activeView) {
       case 'dashboard':
-        return <MobileDashboard onAddTransaction={() => setShowTransactionForm(true)} />;
+        return <DashboardView />;
       case 'transactions':
         return <TransactionsView />;
       case 'budgets':
@@ -43,22 +42,15 @@ function App() {
       case 'settings':
         return <ComingSoonView title="Paramètres" />;
       default:
-        return <MobileDashboard onAddTransaction={() => setShowTransactionForm(true)} />;
+        return <DashboardView />;
     }
   };
 
   return (
     <>
-      <MobileLayout activeView={activeView} onViewChange={setActiveView}>
+      <Layout activeView={activeView} onViewChange={setActiveView}>
         {renderView()}
-      </MobileLayout>
-
-      {/* FAB - only show on dashboard and transactions */}
-      {(activeView === 'dashboard' || activeView === 'transactions') && (
-        <FloatingActionButton 
-          onClick={() => setShowTransactionForm(true)}
-        />
-      )}
+      </Layout>
 
       {/* Transaction Form Modal */}
       <TransactionForm
